@@ -1,10 +1,10 @@
-import css from './friendList.module.css'
-import {FriendListItem} from '../FriendListItem/FriendListItem'
+import css from './friendList.module.css';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
 
 export const FriendList = ({ friends }) => {
   return (
     <ul className={css.friend_list}>
-      {friends.map(({ avatar, name , isOnline }) => (
+      {friends.map(({ avatar, name, isOnline }) => (
         <FriendListItem
           key={name}
           avatar={avatar}
@@ -13,5 +13,5 @@ export const FriendList = ({ friends }) => {
         />
       ))}
     </ul>
-  )
-}
+  );
+};
